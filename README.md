@@ -6,14 +6,24 @@ Em termos simples, o PCA transforma um conjunto de variáveis correlacionadas em
 
 ## O processo de redução de dimensionalidade por meio do PCA envolve os seguintes passos:
 
-1. Padronização dos Dados: Os dados são geralmente padronizados para ter média zero e desvio padrão um, para garantir que todas as variáveis tenham a mesma escala.
+### 1. Padronização dos Dados:
 
-2. Cálculo da Matriz de Covariância ou Correlação: Com base nos dados padronizados, é calculada a matriz de covariância ou correlação. A escolha entre covariância e correlação depende da escala das variáveis e dos objetivos específicos da análise.
+Os dados são geralmente padronizados para ter média zero e desvio padrão um, para garantir que todas as variáveis tenham a mesma escala.
 
-3. Cálculo dos Autovetores e Autovalores: Os autovetores e autovalores da matriz de covariância ou correlação são calculados. Os autovetores representam as direções principais dos dados, enquanto os autovalores indicam a quantidade de variância ao longo dessas direções.
+### 2. Cálculo da Matriz de Covariância ou Correlação:
 
-4. Ordenação dos Componentes Principais: Os autovetores são ordenados de acordo com seus autovalores, de forma que o primeiro componente principal corresponde ao autovetor com o maior autovalor, o segundo componente principal corresponde ao segundo maior autovalor, e assim por diante.
+Com base nos dados padronizados, é calculada a matriz de covariância ou correlação. A escolha entre covariância e correlação depende da escala das variáveis e dos objetivos específicos da análise.
 
-5. Projeção dos Dados nos Novos Componentes Principais: Os dados originais são projetados nos novos componentes principais, criando assim um conjunto de dados de menor dimensionalidade.
+### 3. Cálculo dos Autovetores e Autovalores:
+
+Os autovetores e autovalores da matriz de covariância ou correlação são calculados. Os autovetores representam as direções principais dos dados, enquanto os autovalores indicam a quantidade de variância ao longo dessas direções.
+
+### 4. Ordenação dos Componentes Principais: 
+
+Os autovetores são ordenados de acordo com seus autovalores, de forma que o primeiro componente principal corresponde ao autovetor com o maior autovalor, o segundo componente principal corresponde ao segundo maior autovalor, e assim por diante.
+
+### 6. Projeção dos Dados nos Novos Componentes Principais:
+
+Os dados originais são projetados nos novos componentes principais, criando assim um conjunto de dados de menor dimensionalidade.
 
 A redução de dimensionalidade por meio do PCA é útil em diversas situações, como na visualização de dados, na remoção de multicolinearidade em modelos de regressão, na aceleração do treinamento de modelos de machine learning e na eliminação de ruídos nos dados. No entanto, é importante notar que a interpretação dos resultados pode se tornar mais desafiadora após a aplicação do PCA, pois os novos componentes principais podem não ter significado direto nas unidades originais dos dados.
